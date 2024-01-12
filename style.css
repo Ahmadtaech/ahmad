@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  background-color: black;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #06c;
+  margin: 10px 0;
+}
+
+.border {
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.header {
+  padding: 0 15px;
+  align-items: center;
+}
+
+.top_section {
+  background-color: transparent;
+  width: 40%;
+  border: 2px solid rgb(31, 30, 30);
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.t_s-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.t_s_c-item {
+  color: #fff;
+  transition: all 1s;
+}
+
+.t_s_c-item i {
+  margin-right: 20px;
+}
+
+.t_s_c-item:hover {
+  color: #06c;
+}
+
+.toggle-mode{
+  background-color: rgb(39, 39, 39);
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px solid rgb(31, 30, 30);
+  margin-top: 25px;
+  transition: all 1s;
+}
+
+.toggle-mode:hover {
+  cursor: pointer;
+  color: #06c;
+}
+
+.hero-img {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.hero-img img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid #06c;
+}
+
+.hero-img i {
+  color: #06c;
+  margin-left: 10px;
+  margin-top: -50px;
+}
+
+.dev-disc {
+  font-size: 25px;
+  color: #fff;
+  margin-top: -70px;
+  margin-left: 190px;
+}
+
+.dev-disc p {
+  font-size: 17px;
+}
+
+.main-content{
+  display: flex;
+}
+
+.side-bar {
+  min-width: 20%;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 30px;
+  background: transparent;
+}
+
+.filter-item{
+  width: 80%;
+  text-align: center;
+  border: 1px solid #06c;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border-radius: 10px;
+  transition: all .3s;
+}
+
+.filter-item:hover{
+  border-color: teal;
+  rotate: -1deg;
+  scale: 1.02;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px teal;
+}
+
+.side-bar ul .filter-item a {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 20px;
+  transition: all .5s;
+}
+
+.filter-item:hover > a{
+  color: #06c;
+}
+
+.cards-side {
+  width: 80%;
+  height: 30vh;
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  border: 2px solid #06c;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.5s all;
+  margin: 10px 20px 30px 40px;
+}
+
+.card:hover {
+  border-color: teal;
+  rotate: 1deg;
+  scale: 1.02;
+  cursor: pointer;
+  box-shadow: 2px 2px 15px teal;
+}
+
+.card .img {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 5px;
+}
+
+.card h2 {
+  color: #eee;
+  margin-left: 15px;
+  transition: 0.5s all;
+}
+
+.card:hover > h2{
+  color: #06c;
+  cursor: pointer;
+}
+
+.card p {
+  color: gray;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.veiw-project {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-left: 15px;
+  border: 1px solid #06c;
+  transition: all .5s;
+}
+
+.veiw-project a {
+  color: aliceblue;
+}
+
+.card:hover .veiw-project{
+  background-color: #06c;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.buttons div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.buttons div i {
+  color: #06c;
+  margin-right: 10px;
+}
+
+.socil-icons {
+  width: 130px;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.socil-icons a {
+  font-size: 15px;
+  color: #fff;
+  margin-right: 20px;
+  transition: all 0.5s;
+}
+
+.socil-icons a:hover {
+  color: #06c;
+}
+
+.top-list{
+  
+}
+
+@media screen and (max-width: 600px) {
+  .top_section{
+    display: none;
+  }
+}
